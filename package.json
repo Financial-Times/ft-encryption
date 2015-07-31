@@ -1,0 +1,17 @@
+{
+  "name": "ft-crypto",
+  "version": "1.0.0",
+  "description": "encryption wrapper",
+  "main": "lib/encryption.js",
+  "scripts": {
+    "test": "gulp --harmony test"
+  },
+  "author": "art.deineka@ft.com",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-mocha": "^2.1.3"
+  }
+}
