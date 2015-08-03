@@ -22,9 +22,17 @@ describe('Encryption service', () => {
     assert.equal(listid, data.listid);
   });
 
-  it('should return null if unable to decrypt', () => {
-    let data = encryption.decrypt('not an encrypted string..');
-    assert.ok(!data);
+  it('should throw error if unable to decrypt', () => {
+    assert.throws(() => {
+      let data = encryption.decrypt('not an encrypted string..');
+    }, Error);
+  });
+
+  it('should throw error if unable to parse JSON', () => {
+    let encrypted_string = '8SoHFEIOqSqtF13iVznL5A==';
+    assert.throws(() => {
+      let data = encryption.decrypt(encrypted_string);
+    }, Error);
   });
 
 });
