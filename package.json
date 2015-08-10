@@ -1,6 +1,6 @@
 {
   "name": "ft-encryption",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "encryption wrapper",
   "main": "lib/encryption.js",
   "scripts": {
